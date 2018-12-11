@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -170,6 +170,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="jkt-Cr-anZ" eventType="touchUpInside" id="Ynu-b7-vIb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-f3-cEh">
                                 <rect key="frame" x="108" y="344" width="198" height="29"/>
@@ -224,15 +227,21 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="B9P-Ec-8CJ">
+                                <rect key="frame" x="188.66666666666666" y="249.66666666666663" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wfu-Hq-JgI" firstAttribute="centerX" secondItem="YJA-10-3Fz" secondAttribute="centerX" id="7Z9-PL-QdT"/>
+                            <constraint firstItem="B9P-Ec-8CJ" firstAttribute="centerY" secondItem="YJA-10-3Fz" secondAttribute="centerY" constant="-100" id="Apz-cs-hOc"/>
                             <constraint firstItem="rMA-nb-vlN" firstAttribute="trailing" secondItem="6hP-8V-CEp" secondAttribute="trailing" constant="16" id="Ly3-Ze-eRq"/>
                             <constraint firstItem="3d3-jd-vJt" firstAttribute="top" secondItem="rMA-nb-vlN" secondAttribute="top" constant="60" id="OpF-3t-vtK"/>
                             <constraint firstItem="4Ql-pA-fPg" firstAttribute="top" secondItem="Wfu-Hq-JgI" secondAttribute="bottom" constant="40" id="W1R-cg-khe"/>
                             <constraint firstItem="3d3-jd-vJt" firstAttribute="centerX" secondItem="YJA-10-3Fz" secondAttribute="centerX" id="c6A-Ux-gno"/>
                             <constraint firstItem="CCc-f3-cEh" firstAttribute="top" secondItem="4Ql-pA-fPg" secondAttribute="bottom" id="cYZ-a3-JsD"/>
+                            <constraint firstItem="B9P-Ec-8CJ" firstAttribute="centerX" secondItem="YJA-10-3Fz" secondAttribute="centerX" id="gAF-Zp-xFW"/>
                             <constraint firstItem="4Ql-pA-fPg" firstAttribute="centerX" secondItem="YJA-10-3Fz" secondAttribute="centerX" id="gQV-bd-QTs"/>
                             <constraint firstItem="6hP-8V-CEp" firstAttribute="top" secondItem="rMA-nb-vlN" secondAttribute="top" constant="8" id="oDc-h1-rTp"/>
                             <constraint firstItem="Wfu-Hq-JgI" firstAttribute="top" secondItem="3d3-jd-vJt" secondAttribute="bottom" constant="40" id="uvU-oi-l23"/>
@@ -241,6 +250,9 @@
                         <viewLayoutGuide key="safeArea" id="rMA-nb-vlN"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="9BD-5C-rWO" id="RMQ-Ws-iAX"/>
+                        <outlet property="spinner" destination="B9P-Ec-8CJ" id="ToI-nn-JIl"/>
+                        <outlet property="usernameTxt" destination="8G5-qp-0cY" id="3OP-O3-hUm"/>
                         <segue destination="QVX-6L-Beg" kind="show" identifier="toCreateAccount" id="ADO-jk-K4i"/>
                     </connections>
                 </viewController>
@@ -377,7 +389,7 @@
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tmm-uZ-PeD">
-                                <rect key="frame" x="188.66666666666666" y="349.66666666666669" width="37" height="37"/>
+                                <rect key="frame" x="188.66666666666666" y="249.66666666666663" width="37" height="37"/>
                                 <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -389,7 +401,7 @@
                             <constraint firstItem="aTo-LV-1Zc" firstAttribute="centerX" secondItem="7gQ-XZ-z8J" secondAttribute="centerX" id="D04-No-Xcc"/>
                             <constraint firstItem="iWW-Mp-ehR" firstAttribute="top" secondItem="lmI-0k-vPY" secondAttribute="top" constant="40" id="Dso-n0-iYU"/>
                             <constraint firstItem="lmI-0k-vPY" firstAttribute="trailing" secondItem="35m-lk-nXT" secondAttribute="trailing" constant="16" id="IIS-Lh-Ahh"/>
-                            <constraint firstItem="tmm-uZ-PeD" firstAttribute="centerY" secondItem="7gQ-XZ-z8J" secondAttribute="centerY" id="LvS-Fj-onI"/>
+                            <constraint firstItem="tmm-uZ-PeD" firstAttribute="centerY" secondItem="7gQ-XZ-z8J" secondAttribute="centerY" constant="-100" id="LvS-Fj-onI"/>
                             <constraint firstItem="dtq-5t-gg7" firstAttribute="centerX" secondItem="7gQ-XZ-z8J" secondAttribute="centerX" id="LwZ-UC-aOb"/>
                             <constraint firstItem="aTo-LV-1Zc" firstAttribute="top" secondItem="67b-fD-dZf" secondAttribute="bottom" constant="4" id="Mp9-MS-97F"/>
                             <constraint firstItem="35m-lk-nXT" firstAttribute="top" secondItem="lmI-0k-vPY" secondAttribute="top" constant="8" id="ZVv-CE-opO"/>
