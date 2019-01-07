@@ -640,6 +640,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dX-Sb-w7m">
+                                <rect key="frame" x="8" y="690" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -649,9 +655,11 @@
                             <constraint firstItem="ZQ2-h8-72A" firstAttribute="trailing" secondItem="u2U-Gg-pkj" secondAttribute="trailing" id="IBp-dQ-BNp"/>
                             <constraint firstItem="hgD-DB-MwZ" firstAttribute="leading" secondItem="u2U-Gg-pkj" secondAttribute="leading" id="LmO-Dm-Qlt"/>
                             <constraint firstItem="u2U-Gg-pkj" firstAttribute="bottom" secondItem="3ad-Py-i9x" secondAttribute="bottom" id="Mwt-Ai-ZwW"/>
+                            <constraint firstItem="3ad-Py-i9x" firstAttribute="top" secondItem="0dX-Sb-w7m" secondAttribute="bottom" constant="6" id="VrH-rS-weF"/>
                             <constraint firstItem="u2U-Gg-pkj" firstAttribute="trailing" secondItem="3ad-Py-i9x" secondAttribute="trailing" id="b8f-bc-owD"/>
                             <constraint firstItem="u2U-Gg-pkj" firstAttribute="trailing" secondItem="K5j-V6-TUk" secondAttribute="trailing" constant="8" id="d6M-aG-UV5"/>
                             <constraint firstItem="K5j-V6-TUk" firstAttribute="centerY" secondItem="3ad-Py-i9x" secondAttribute="centerY" id="hsr-Ye-0HL"/>
+                            <constraint firstItem="0dX-Sb-w7m" firstAttribute="leading" secondItem="u2U-Gg-pkj" secondAttribute="leading" constant="8" id="lOm-9G-Ot8"/>
                             <constraint firstItem="ZQ2-h8-72A" firstAttribute="top" secondItem="8c1-oi-hUJ" secondAttribute="top" id="mof-GV-EUg"/>
                             <constraint firstItem="u2U-Gg-pkj" firstAttribute="trailing" secondItem="hgD-DB-MwZ" secondAttribute="trailing" id="qVB-ch-MQy"/>
                             <constraint firstItem="3ad-Py-i9x" firstAttribute="top" secondItem="hgD-DB-MwZ" secondAttribute="bottom" constant="30" id="uKh-5F-keH"/>
@@ -664,6 +672,7 @@
                         <outlet property="messageTxtBox" destination="3ad-Py-i9x" id="Rd1-Az-reB"/>
                         <outlet property="sendBtn" destination="K5j-V6-TUk" id="Uc1-aK-3TE"/>
                         <outlet property="tableView" destination="hgD-DB-MwZ" id="XCh-qW-gpQ"/>
+                        <outlet property="typingUsersLbl" destination="0dX-Sb-w7m" id="7bG-4a-1Cb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3s9-SH-wEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
