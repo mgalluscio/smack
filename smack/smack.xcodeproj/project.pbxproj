@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40189D621CB37AB006CD332 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40189D521CB37AB006CD332 /* Message.swift */; };
 		A405BCF02171198E00793819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405BCEF2171198E00793819 /* AppDelegate.swift */; };
 		A405BCF52171198E00793819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A405BCF32171198E00793819 /* Main.storyboard */; };
 		A405BCF72171198F00793819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A405BCF62171198F00793819 /* Assets.xcassets */; };
@@ -23,6 +24,8 @@
 		A47C285B21C043D1005E5421 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C285A21C043D1005E5421 /* ChannelCell.swift */; };
 		A47C285E21C180D3005E5421 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C285C21C180D3005E5421 /* AddChannelVC.swift */; };
 		A47C285F21C180D3005E5421 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A47C285D21C180D3005E5421 /* AddChannelVC.xib */; };
+		A48AD1D521CC4B740010033B /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48AD1D421CC4B740010033B /* KeyboardBoundView.swift */; };
+		A48AD1D721CC59830010033B /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48AD1D621CC59830010033B /* MessageCell.swift */; };
 		A4943BB6217E27E7001E8903 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4943BB5217E27E7001E8903 /* AvatarPickerVC.swift */; };
 		A4943BB8217E3096001E8903 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4943BB7217E3096001E8903 /* AvatarCell.swift */; };
 		A4D8D02421815CEB0006ADE8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D8D02321815CEB0006ADE8 /* CircleImage.swift */; };
@@ -39,6 +42,7 @@
 		1ECAE9183A466206F1C473B9 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		628B64816AC8B59C18D10DDC /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
 		65DB3C805B17C5906CC532C7 /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
+		A40189D521CB37AB006CD332 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A405BCEC2171198E00793819 /* smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A405BCEF2171198E00793819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A405BCF42171198E00793819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		A47C285A21C043D1005E5421 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		A47C285C21C180D3005E5421 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		A47C285D21C180D3005E5421 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		A48AD1D421CC4B740010033B /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		A48AD1D621CC59830010033B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		A4943BB5217E27E7001E8903 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		A4943BB7217E3096001E8903 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		A4D8D02321815CEB0006ADE8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -160,6 +166,8 @@
 				A4943BB7217E3096001E8903 /* AvatarCell.swift */,
 				A4D8D02321815CEB0006ADE8 /* CircleImage.swift */,
 				A47C285A21C043D1005E5421 /* ChannelCell.swift */,
+				A48AD1D421CC4B740010033B /* KeyboardBoundView.swift */,
+				A48AD1D621CC59830010033B /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				A47C285821C02D0B005E5421 /* Channel.swift */,
+				A40189D521CB37AB006CD332 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,12 +338,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48AD1D521CC4B740010033B /* KeyboardBoundView.swift in Sources */,
 				A44C3E7D21C3088900E4944D /* SocketService.swift in Sources */,
 				A428F351218A5F3800871B44 /* ProfileVC.swift in Sources */,
 				A47C285B21C043D1005E5421 /* ChannelCell.swift in Sources */,
 				A44A58CD217425AB00963558 /* ChannelVC.swift in Sources */,
 				A4943BB6217E27E7001E8903 /* AvatarPickerVC.swift in Sources */,
+				A48AD1D721CC59830010033B /* MessageCell.swift in Sources */,
 				A4DB38212177EE6C00273B03 /* RoundedButton.swift in Sources */,
+				A40189D621CB37AB006CD332 /* Message.swift in Sources */,
 				A47C285921C02D0B005E5421 /* Channel.swift in Sources */,
 				A4D8D02421815CEB0006ADE8 /* CircleImage.swift in Sources */,
 				A47C285721C02CBB005E5421 /* MessageService.swift in Sources */,
